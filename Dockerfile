@@ -12,7 +12,10 @@ RUN \
   scalac -version
 
 RUN \
-  curl -fsL https://github.com/sbt/sbt/releases/download/v$SBT_VERSION/sbt-$SBT_VERSION.tgz | tar xfz - -C /usr/local && \
-  $(mv /usr/local/sbt-launcher-packaging-$SBT_VERSION /usr/local/sbt || true) \
-  ln -s /usr/local/sbt/bin/* /usr/local/bin/ && \
+  curl -fsL https://github.com/sbt/sbt/releases/download/v$SBT_VERSION/sbt-$SBT_VERSION.tgz | tar xfz - -C /usr/local
+RUN \
+  $(mv /usr/local/sbt-launcher-packaging-$SBT_VERSION /usr/local/sbt || true)
+RUN \
+  ln -s /usr/local/sbt/bin/* /usr/local/bin/
+RUN \
   sbt sbt-version
