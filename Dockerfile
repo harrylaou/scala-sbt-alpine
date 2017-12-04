@@ -7,6 +7,7 @@ RUN \
   echo "$SCALA_VERSION $SBT_VERSION" && \
   apk add --no-cache bash && \
   apk add --no-cache curl && \
+  apk add --no-cache bc && \
   scala -version && \
   scalac -version
 
