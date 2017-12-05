@@ -1,5 +1,5 @@
 FROM  frolvlad/alpine-scala
-MAINTAINER harrylaou@gmail.com
+MAINTAINER Harry Laoulakos <harrylaou@gmail.com>
 ENV SCALA_VERSION=2.12.4
 ENV SBT_VERSION=1.0.4
 
@@ -9,13 +9,9 @@ RUN \
   apk add --no-cache curl && \
   apk add --no-cache bc && \
   scala -version && \
-  scalac -version
-
-RUN \
-  curl -fsL https://github.com/sbt/sbt/releases/download/v$SBT_VERSION/sbt-$SBT_VERSION.tgz | tar xfz - -C /usr/local
-RUN \
-  $(mv /usr/local/sbt-launcher-packaging-$SBT_VERSION /usr/local/sbt || true)
-RUN \
-  ln -s /usr/local/sbt/bin/* /usr/local/bin/
-RUN \
+  scalac -version && \
+  curl -fsL https://github.com/sbt/sbt/releases/download/v$SBT_VERSION/sbt-$SBT_VERSION.tgz | tar xfz - -C /usr/local && \
+  $(mv /usr/local/sbt-launcher-packaging-$SBT_VERSION /usr/local/sbt || true) && \
+  ln -s /usr/local/sbt/bin/* /usr/local/bin/ && \
+  apk del curl && \
   sbt sbtVersion

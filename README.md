@@ -1,1 +1,23 @@
+[![Docker Stars](https://img.shields.io/docker/stars/harrylaou/scala-sbt-alpine.svg?style=flat-square)](https://hub.docker.com/r/harrylaou/scala-sbt-alpine/)
+
+[![Docker Pulls](https://img.shields.io/docker/pulls/harrylaou/scala-sbt-alpine.svg?style=flat-square)](https://hub.docker.com/r/harrylaou/scala-sbt-alpine/)
+
+[![](https://images.microbadger.com/badges/version/harrylaou/scala-sbt-alpine.svg)](https://microbadger.com/images/harrylaou/scala-sbt-alpine "Get your own version badge on microbadger.com")
 # scala-sbt-alpine
+
+A minimal sbt alpine docker image based on OracleJDK 8  and [frolvlad/alpine-scala](https://hub.docker.com/r/frolvlad/alpine-scala/)
+
+current environment parameters (can be configured)
+
+```dockerfile
+SCALA_VERSION=2.12.4
+SBT_VERSION=1.0.4
+```
+
+
+
+
+
+
+Download size of this image is only:
+[![](https://images.microbadger.com/badges/image/harrylaou/scala-sbt-alpine.svg)](https://microbadger.com/images/harrylaou/scala-sbt-alpine "Get your own image badge on microbadger.com")
