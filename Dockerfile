@@ -12,5 +12,4 @@ RUN \
   $(mv /usr/local/sbt-launcher-packaging-$SBT_VERSION /usr/local/sbt || true) && \
   ln -s /usr/local/sbt/bin/* /usr/local/bin/ && \
   apk del curl && \
-  apk cache clean && \
   sbt sbtVersion
