@@ -18,4 +18,4 @@ RUN \
 RUN \
   ln -s /usr/local/sbt/bin/* /usr/local/bin/
 RUN \
-  sbt sbt-version
+  sbt sbtVersion
