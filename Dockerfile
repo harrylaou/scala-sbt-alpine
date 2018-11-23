@@ -5,7 +5,8 @@ ENV SBT_VERSION=1.2.6
 
 RUN \
   echo "$SCALA_VERSION $SBT_VERSION" && \
-  apk add --no-cache bash curl bc && \
+  apk add --no-cache bash curl bc ca-certificates && \
+  update-ca-certificates && \
   scala -version && \
   scalac -version && \
   curl -fsL https://github.com/sbt/sbt/releases/download/v$SBT_VERSION/sbt-$SBT_VERSION.tgz | tar xfz - -C /usr/local && \
