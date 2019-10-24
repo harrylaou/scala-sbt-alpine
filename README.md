@@ -18,5 +18,5 @@ SBT_VERSION=1.2.6
 
 
 
-Download size of this image is only:
+Download size of this image is:
 [![](https://images.microbadger.com/badges/image/harrylaou/scala-sbt-alpine.svg)](https://microbadger.com/images/harrylaou/scala-sbt-alpine "Get your own image badge on microbadger.com")

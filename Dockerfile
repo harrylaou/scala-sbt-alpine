@@ -1,7 +1,7 @@
 FROM  frolvlad/alpine-scala
 MAINTAINER Harry Laoulakos <harrylaou@gmail.com>
-ENV SCALA_VERSION=2.12.7
-ENV SBT_VERSION=1.2.6
+ENV SCALA_VERSION=2.12.10
+ENV SBT_VERSION=1.3.3
 
 RUN \
   echo "$SCALA_VERSION $SBT_VERSION" && \
