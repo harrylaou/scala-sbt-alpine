@@ -9,9 +9,8 @@ A minimal sbt alpine docker image based on OracleJDK 8  and [frolvlad/alpine-sca
 current environment parameters (can be configured)
 
 ```dockerfile
-SCALA_VERSION=2.12.10
-SBT_VERSION=1.3.3
-SBT_VERSION=1.3.3
+SCALA_VERSION=2.13.1
+SBT_VERSION=1.3.8
 ```
 
 
