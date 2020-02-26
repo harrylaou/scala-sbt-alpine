@@ -1,5 +1,5 @@
 FROM  frolvlad/alpine-scala
-LABEL maintainer="Harry Laoulakos <harry@talos.software>"
+LABEL maintainer="harry@talos.software"
 ENV SCALA_VERSION=2.13.1 \
   SBT_VERSION=1.3.8
 
