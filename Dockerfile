@@ -1,7 +1,7 @@
 FROM  frolvlad/alpine-scala
 LABEL maintainer="harry@talos.software"
-ENV SCALA_VERSION=2.13.1 \
-  SBT_VERSION=1.3.8
+ENV SCALA_VERSION=2.13.4 \
+  SBT_VERSION=1.4.6
 
 RUN \
   echo "$SCALA_VERSION $SBT_VERSION" && \
